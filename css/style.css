@@ -1,0 +1,397 @@
+@charset "UTF-8";
+/*======================================================
+基本 全体の設定
+======================================================*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-feature-settings: "palt";
+  background-color: #fff;
+  position: relative;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  color: #333333;
+  letter-spacing: 0.05em;
+}
+
+a {
+  color: inherit;
+  transition: 0.3s all;/* 値が変わった場合、0.3秒かけて変化する */
+}
+
+/* a:hoverはマウスオーバーしたときのセレクタ */
+a:hover {
+  opacity: 0.7;
+}
+
+/* 画像は親要素からはみ出さないように最大幅を100%に */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* リストの先頭に・がつかないように */
+li {
+  list-style: none;
+}
+
+@media (min-width: 901px) {
+  .sp_only {
+    display: none !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .pc_only {
+    display: none !important;
+  }
+}
+
+
+
+
+/*======================================================
+header
+======================================================*/
+header {
+  position: fixed;/* position: fixedにするとスクロールしても同じ位置に表示される */
+  z-index: 2; /* z-indexはレイヤーの前後関係。数字が大きくなるほど手前 */
+  max-width: 1000px;/* max-widthは最大幅 ウィンドウが小さくなればそれに合わせてせまくなる */
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+header a {
+  display: block;
+  text-decoration: none;/* a要素にもともと付く下線をなしに */
+}
+
+header .inner {
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
+  border-radius: 4px;
+  margin: 20px;
+}
+
+/* ロゴ */
+#header_logo img {
+  display: block;
+  width: 100px;
+}
+
+/* メニュー */
+#global_menu {
+  display: flex;
+  font-size: 23px;
+  position: relative;
+}
+
+
+
+#global_menu a {
+  padding: 0px 13px;
+  line-height: 1;
+  position: relative;
+}
+
+#global_menu li {
+  position: relative;
+}
+
+#global_menu li.current::before {
+  content: "";
+  bottom: 2px;
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  background-color: #ccc;
+}
+
+#menu_btn{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  right: 10px;
+  top: 7px;
+  background-color: #ccc;
+  z-index: 30;
+  cursor: pointer;
+  display: none;
+}
+
+/* レスポンシブ */
+@media (max-width: 900px) {
+  header .inner {
+    flex-direction: column;
+  }
+
+  #global_menu {
+    flex-direction: column;
+    display: none;
+  }
+
+  .open_menu #global_menu {
+    display: flex;
+  }
+
+  #global_menu li a{
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  #menu_btn{
+    display: block;
+  }
+}
+
+/*======================================================
+footer
+======================================================*/
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 10px;
+}
+
+
+/*======================================================
+コンテンツ共通
+======================================================*/
+
+body.contents_page {/* classにcontents_pageが指定されているbodyタグ */
+  padding-top: 100px;
+}
+
+.sec{
+  margin-bottom: 40px;
+}
+
+.contents {
+  max-width: 1000px;
+  min-height: 600px;
+  padding: 20px;
+  margin: auto;
+}
+
+/* =================================================
+トップページ
+================================================= */
+.top_eye_catch {
+  height: 500px;
+  color: #fff;
+  font-weight: bold;
+  background-image: url(../images/top.jpg);/* 背景画像 */
+  background-size: cover;/* 背景画像のサイズ 要素いっぱいに表示 */
+  background-position: center center;/* 背景画像の位置 */
+  background-attachment: fixed;/* スクロールしたときの背景画像の位置 固定 */
+  
+  /* 上下左右中央テクニック https://ics.media/entry/17522/ */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link_menu{
+  padding-top: 10px;
+}
+
+.each_link{
+  display: flex;
+}
+
+.each_link .link_pic{
+  width: 200px;
+}
+
+.each_link .link_txt{
+  margin-left: 30px;
+  flex: 1;
+}
+
+.each_link .link_title{
+  font-weight: bold;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #333;
+}
+
+a.link_btn{
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  margin: 30px 0;
+  border: 2px solid #666;
+  padding: 5px;
+  text-align: center;
+  border-radius: 50px;
+  width: 200px;
+}
+
+a.link_btn:hover{/* classがlink_btnのaタグのマウスオーバー時 */
+  opacity: 1;/* 半透明にならないように上書き */
+  border-radius: 0;
+  color: #fff;
+  background-color: #333;
+}
+
+/* =================================================
+worksページ
+================================================= */
+
+.thumb_list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.thumb_list li {
+  width: 25%;
+  padding: 10px;
+}
+
+@media (max-width: 900px) {
+  .thumb_list li {
+    width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .thumb_list li {
+    width: 100%;
+  }
+}
+
+.thumb_list li a {
+  display: block;
+  height: 120px;
+  border: 1px solid #ccc;
+  opacity: 1;
+  overflow: hidden;/* はみ出た部分は隠す */
+}
+
+.thumb_list li a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  
+  transition: 0.4s all;
+}
+
+/* マウスオーバー時、中の画像が1.3倍になって10度傾く */
+.thumb_list li a:hover img{
+  transform: scale(1.3) rotate(10deg);
+}
+
+/*======================================================
+reportページ
+======================================================*/
+
+.report_eye_catch {
+  height: 300px;
+  background-image: url(../images/report.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.report {
+  border: 1px solid #ccc;
+  padding: 40px;
+}
+
+.report .outline {
+  margin-bottom: 40px;
+  display: flex;
+}
+
+@media (max-width: 900px) {
+  .report .outline {
+    display: block;
+  }
+}
+
+.report .outline .pic {
+  width: 45%;
+  border: 3px solid #999;
+}
+
+.report .outline .txt {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.report h1 {
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border-left: 5px solid #ff9a02;
+}
+
+.ex_link {
+  display: inline-block;
+  position: relative;
+  padding: 4px;
+  padding-left: 26px;
+}
+
+.ex_link::before {
+  box-sizing: border-box;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 14px;
+  border: 3px solid #666;
+  border-radius: 3px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* =================================================
+profileページ
+================================================= */
+.profile_container{
+  writing-mode: vertical-rl;
+  width: 100%;
+  height: 300px;
+  overflow: auto;
+}
+
+.profile_container h3{
+  margin-right: 30px;
+}
+
+
+
+/*======================================================
+汎用
+======================================================*/
+.mb_m {
+  margin-bottom: 20px;
+}

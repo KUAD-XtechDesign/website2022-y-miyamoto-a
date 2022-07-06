@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- cdnからjquery読み込み -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- cdnからlity読み込み https://sorgalla.com/lity/ -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.min.css"
+      integrity="sha512-UiVP2uTd2EwFRqPM4IzVXuSFAzw+Vo84jxICHVbOA1VZFUyr4a6giD9O3uvGPFIuB2p3iTnfDVLnkdY7D/SJJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.min.js"
+      integrity="sha512-UU0D/t+4/SgJpOeBYkY+lG16MaNF8aqmermRIz8dlmQhOlBnw6iQrnt4Ijty513WB3w+q4JO75IX03lDj6qQNA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/main.js"></script>
+    <title>リストページ</title>
+  </head>
+  <body class="contents_page">
+    <header>
+      <div class="inner">
+        <div id="menu_btn"></div>
+        <p id="header_logo">
+          <a href="./index.html"><img src="./images/logo.svg" alt="" /></a>
+        </p>
+        <ul id="global_menu">
+          <li><a href="./profile.html">profile</a></li>
+          <li class="current"><a href="./works.html">works</a></li>
+          <li><a href="./slide.html">slide</a></li>
+          <li><a href="./report.html">report</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section>
+      <div class="report_eye_catch">works</div>
+      <div class="contents">
+        <h2>WORKS</h2>
+        <ul class="thumb_list">
+          <li>
+            <a href="./images/toy01.jpg" data-lity
+              ><img src="./images/toy01.jpg" alt="サムネイル"
+            /></a>
+          </li>
+          <li>
+            <a href="./images/toy02.jpg" data-lity
+              ><img src="./images/toy02.jpg" alt="サムネイル"
+            /></a>
+          </li>
+          <li>
+            <a href="./images/toy03.jpg" data-lity
+              ><img src="./images/toy03.jpg" alt="サムネイル"
+            /></a>
+          </li>
+          <li>
+            <a href="./images/toy04.jpg" data-lity
+              ><img src="./images/toy04.jpg" alt="サムネイル"
+            /></a>
+          </li>
+          <li>
+            <a href="./images/toy03.jpg" data-lity
+              ><img src="./images/toy03.jpg" alt="サムネイル"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>名前など</footer>
+  </body>
+</html>
