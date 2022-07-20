@@ -76,14 +76,6 @@ body{
   padding-top: 100px;
 }
 
-body.contents_page {/* classにcontents_pageが指定されているbodyタグ */
-  padding-top: 100px;
-}
-
-.sec{
-  margin-bottom: 40px;
-}
-
 .contents {
   max-width: 1000px;
   min-height: 600px;
@@ -147,7 +139,7 @@ a.link_btn:hover{/* classがlink_btnのaタグのマウスオーバー時 */
   width: 94%;
   display: flex;
   border-bottom: 1px solid #333;
-  font-size: auto;
+  font-size: 100%;
 }
 
 .shinario a{
@@ -162,6 +154,11 @@ a.link_btn:hover{/* classがlink_btnのaタグのマウスオーバー時 */
   margin-right: 3%;
   margin-bottom: 15px;
   display: flex;
+
+}
+
+.toishi{
+  margin-bottom: 50px;
 }
 
 /* =================================================
@@ -207,11 +204,6 @@ worksページ
   object-position: center center;
   
   transition: 0.4s all;
-}
-
-/* マウスオーバー時、中の画像が1.3倍になって10度傾く */
-.thumb_list li a:hover img{
-  transform: scale(1.3) rotate(10deg);
 }
 
 /*======================================================
@@ -282,27 +274,4 @@ reportページ
   top: 0;
   bottom: 0;
   margin: auto;
-}
-
-/* =================================================
-profileページ
-================================================= */
-.profile_container{
-  writing-mode: vertical-rl;
-  width: 100%;
-  height: 300px;
-  overflow: auto;
-}
-
-.profile_container h3{
-  margin-right: 30px;
-}
-
-
-
-/*======================================================
-汎用
-======================================================*/
-.mb_m {
-  margin-bottom: 20px;
 }
