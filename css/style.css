@@ -143,8 +143,9 @@ a.link_btn:hover{/* classがlink_btnのaタグのマウスオーバー時 */
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
-  width: 50%;
+  width: 94%;
   display: flex;
+  border-bottom: 1px solid #333;
 }
 
 .shinario a{
