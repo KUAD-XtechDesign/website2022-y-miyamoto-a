@@ -60,7 +60,7 @@ header {
   padding-bottom: 15px;
   background-color: #f3f3f3;
   display: inline-flex;
-  font-size: auto;
+  font-size: 100%;
 }
 
 .kokoforia{
@@ -147,6 +147,7 @@ a.link_btn:hover{/* classがlink_btnのaタグのマウスオーバー時 */
   width: 94%;
   display: flex;
   border-bottom: 1px solid #333;
+  font-size: auto;
 }
 
 .shinario a{
