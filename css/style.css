@@ -10,7 +10,7 @@
 
 html,
 body {
-  height: 50%;
+  
   font-feature-settings: "palt";
   background-color: #f3f3f3;
   position: relative;
@@ -134,14 +134,24 @@ a.link_btn:hover{/* classがlink_btnのaタグのマウスオーバー時 */
   background-color: #333;
 }
 
-.shinario{
-  text-align:left;
+.shinario_set{
+  margin-bottom: 25px;
+  margin-right: 3%;
   margin-left: 3%;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  width: 94%;
-  display: flex;
+  transform: scale(0.8);
+  transition: 0.3s all;
+}
+
+.shinario_set:last-child{
+  margin-bottom: 300px;
+}
+
+.shinario_set.active{
+  transform: scale(1);
+}
+
+.shinario{
+  margin-bottom: 15px;
   border-bottom: 1px solid #333;
   font-size: 100%;
 }
@@ -151,14 +161,12 @@ a.link_btn:hover{/* classがlink_btnのaタグのマウスオーバー時 */
 }
 
 .room{
-  float:right;
-  width: 50%;
-  margin-left: 20px;
-  margin-top: 0px;
-  margin-right: 3%;
-  margin-bottom: 15px;
-  display: flex;
+  
+  text-align: right;
+}
 
+.room img{
+  width: 50%;
 }
 
 .toishi{
