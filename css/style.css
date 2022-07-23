@@ -76,9 +76,6 @@ header {
 コンテンツ共通
 ======================================================*/
 
-body{
-  padding-top: 100px;
-}
 
 .contents {
   max-width: 1000px;
@@ -134,6 +131,10 @@ a.link_btn:hover{/* classがlink_btnのaタグのマウスオーバー時 */
   background-color: #333;
 }
 
+.hatenite{
+  padding-top: 110px;
+}
+
 .shinario_set{
   margin-bottom: 25px;
   margin-right: 3%;
@@ -172,6 +173,19 @@ a.link_btn:hover{/* classがlink_btnのaタグのマウスオーバー時 */
   margin-bottom: 50px;
 }
 
+.video{
+  width: 80%;
+  margin-top: 75px;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.shinario_video{
+  font-size: 30px;
+  margin-top: 10px;
+  margin-right: 10%;
+  margin-left: 10%;
+}
 /* =================================================
 worksページ
 ================================================= */
