@@ -186,6 +186,11 @@ a.link_btn:hover{/* classがlink_btnのaタグのマウスオーバー時 */
   margin-right: 10%;
   margin-left: 10%;
 }
+
+.shinario_video a{
+  text-decoration: none;
+}
+
 /* =================================================
 worksページ
 ================================================= */
