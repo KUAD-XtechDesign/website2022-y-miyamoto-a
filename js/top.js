@@ -15,6 +15,7 @@ boxes.forEach(box => {
 function doWhenIntersect(entries) {
   entries.forEach((entry) => {
     if(entry.isIntersecting){
+      $(".active").removeClass("active");
       entry.target.classList.add("active");
     }else{
       entry.target.classList.remove("active");
