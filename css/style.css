@@ -152,7 +152,6 @@ a.link_btn:hover{/* classがlink_btnのaタグのマウスオーバー時 */
 }
 
 .shinario{
-  margin-bottom: 15px;
   border-bottom: 1px solid #333;
   font-size: 30px;
 }
@@ -188,6 +187,16 @@ a.link_btn:hover{/* classがlink_btnのaタグのマウスオーバー時 */
 }
 
 .shinario_video a{
+  text-decoration: none;
+}
+
+.toppage{
+  margin-top: 100px;
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
+.toppage a{
   text-decoration: none;
 }
 
