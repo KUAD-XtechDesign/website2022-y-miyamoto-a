@@ -194,6 +194,7 @@ a.link_btn:hover{/* classがlink_btnのaタグのマウスオーバー時 */
   margin-top: 100px;
   margin-right: 3%;
   margin-left: 3%;
+  text-align: center;
 }
 
 .toppage a{
