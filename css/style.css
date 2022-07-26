@@ -191,7 +191,7 @@ a.link_btn:hover{/* classがlink_btnのaタグのマウスオーバー時 */
 }
 
 .toppage{
-  margin-top: 100px;
+  margin-top: 120px;
   margin-right: 3%;
   margin-left: 3%;
   text-align: center;
@@ -199,6 +199,14 @@ a.link_btn:hover{/* classがlink_btnのaタグのマウスオーバー時 */
 
 .toppage a{
   text-decoration: none;
+}
+
+.shoukai{
+  text-decoration: underline 1px #333;
+}
+
+.sakuhinn{
+  margin-bottom: 85px;
 }
 
 /* =================================================
