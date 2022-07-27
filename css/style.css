@@ -193,8 +193,9 @@ a.link_btn:hover{/* classがlink_btnのaタグのマウスオーバー時 */
 }
 
 .shinario_video a{
-  text-decoration: none;
+  text-decoration: underline 1px #333;
 }
+
 
 .modoru{
   margin-top: 70px;
@@ -215,10 +216,6 @@ a.link_btn:hover{/* classがlink_btnのaタグのマウスオーバー時 */
 
 .toppage a{
   text-decoration: none;
-}
-
-.shoukai{
-  text-decoration: underline 1px #333;
 }
 
 .sakuhinn{
