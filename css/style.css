@@ -190,6 +190,16 @@ a.link_btn:hover{/* classがlink_btnのaタグのマウスオーバー時 */
   text-decoration: none;
 }
 
+.modoru{
+  margin-top: 70px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.modoru a{
+  text-decoration: none;
+}
+
 .toppage{
   margin-top: 120px;
   margin-right: 3%;
